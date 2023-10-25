@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.css' integrity='sha512-bR79Bg78Wmn33N5nvkEyg66hNg+xF/Q8NA8YABbj+4sBngYhv9P8eum19hdjYcY7vXk/vRkhM3v/ZndtgEXRWw==' crossorigin='anonymous'/>
+  <title>PHP Badwords</title>
+</head>
+<body>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-6">
+        <h2>Fill in the form with paragraph and word to be censured</h2>
+  
+      <form action="page-form-post-censured.php" method="POST" >
+        <h6>Write your paragraph</h6>
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="paragraph" name="paragraph" style="height: 100px"></textarea>
+          <label for="paragraph">Insert paragraph</label>
+        </div>
+        <div class="mb-3">
+          <label for="word_to_censure" class="form-label">Word to be censured</label>
+          <input type="text" class="form-control" id="word_to_censure"  name="word_to_censure" placeholder="Insert word to be censured">
+        </div>
+   
+        <button type="submit" class="btn btn-primary">Invio</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
