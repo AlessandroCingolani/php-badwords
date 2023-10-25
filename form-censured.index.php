@@ -3,6 +3,11 @@
 
  $word_to_censure = $_POST['word_to_censure'] ?? 'NO WORD TO CENSURE';
 
+ $paragraph_explode = explode(' ', $paragraph);
+
+ $paragraph_replace = str_replace("$word_to_censure", '***', $paragraph);
+
+
 ?>
 
 
@@ -21,9 +26,10 @@
 <div class="container my-5">
   <div class="row">
     <div class="col-6">
-      <h2>Atterraggio Form in POST</h2>
-      <h2>Text sended: <?php echo $paragraph ?> has <?php echo  ?> words</h2>
-
+      <h2 class="text-success">Text sended:</h2>
+      <h3><?php echo $paragraph ?> has <?php echo count($paragraph_explode)  ?> words</h3>
+      <h2 class="text-danger">Censured text:</h2>
+      <h3><?php echo $paragraph_replace ?> has <?php echo count($paragraph_explode)  ?> words</h3>
     </div>
   </div>
 </div>
