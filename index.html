@@ -10,17 +10,17 @@
   <div class="container my-5">
     <div class="row">
       <div class="col-6">
-        <h2>Fill in the form with paragraph and word to be censured</h2>
+        <h1>Fill in the form with paragraph and word to be censured</h1>
   
       <form action="form-censured.index.php" method="POST" >
-        <h6>Write your paragraph</h6>
-        <div class="form-floating">
-          <textarea class="form-control" placeholder="Leave a comment here" id="paragraph" name="paragraph" style="height: 100px"></textarea>
+        <h4 class="mt-5">Write your paragraph</h4>
+        <div class="form-floating mb-5">
+          <textarea class="form-control" required placeholder="Leave a comment here" id="paragraph" name="paragraph" style="height: 100px"></textarea>
           <label for="paragraph">Insert paragraph</label>
         </div>
         <div class="mb-3">
-          <label for="word_to_censure" class="form-label">Word to be censured</label>
-          <input type="text" class="form-control" id="word_to_censure"  name="word_to_censure" placeholder="Insert word to be censured">
+          <h4 class="text-danger">Word to be censured</h4>
+          <input type="text" class="form-control" required id="word_to_censure"  name="word_to_censure" placeholder="Insert word to be censured">
         </div>
    
         <button type="submit" class="btn btn-primary">Send</button>
