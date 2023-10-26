@@ -28,7 +28,7 @@
       <h2 class="text-success">Text sended:</h2>
       <h3><?php echo $paragraph_trim ?> <p class="text-primary pt-3">has <?php echo strlen($paragraph_trim) ?> characters</p></h3>
       <h2 class="text-danger">Censured text:</h2>
-      <h3><?php echo $paragraph_replace ?> <p class="text-primary pt-3"> has <?php echo strlen($paragraph_trim) ?> characters</p></h3>
+      <h3><?php echo $paragraph_replace ?> <p class="text-primary pt-3"> has <?php echo strlen($paragraph_replace) ?> characters</p></h3>
     </div>
   </div>
 </div>
